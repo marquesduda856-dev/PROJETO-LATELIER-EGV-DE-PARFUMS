@@ -1,0 +1,850 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #020d17;
+    color: #eee7dc;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================
+   HERO / PARTE PRINCIPAL
+========================================= */
+
+.hero {
+    min-height: calc(100vh - 78px);
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(2, 13, 23, 0.98) 0%,
+            rgba(2, 13, 23, 0.82) 32%,
+            rgba(2, 13, 23, 0.38) 68%,
+            rgba(2, 13, 23, 0.18) 100%
+        ),
+        url("../img/pagina_linha_F/principal.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px;
+
+    position: relative;
+}
+
+
+/* =========================================
+   TEXTO DO HERO
+========================================= */
+
+.hero-text {
+    width: 550px;
+    position: relative;
+    z-index: 2;
+}
+
+.categoria {
+    color: #d8ad63;
+
+    font-size: 11px;
+    letter-spacing: 5px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    color: #f2e6d2;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 62px;
+    font-weight: 400;
+
+    line-height: 1.05;
+
+    margin-bottom: 28px;
+}
+
+.hero h1 span {
+    color: #d8ad63;
+    font-style: italic;
+}
+
+.descricao {
+    width: 450px;
+
+    color: #c7c2ba;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.botao {
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    border: 1px solid #d8ad63;
+
+    color: #d8ad63;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+
+    transition: 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #d8ad63;
+    color: #020d17;
+}
+
+
+/* =========================================
+   FAMÍLIAS OLFATIVAS
+========================================= */
+
+/* ==========================================
+   FAMÍLIAS OLFATIVAS
+========================================== */
+
+.familias {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+
+    padding: 45px 40px 50px;
+
+    background: #03111d;
+
+    /* linhas douradas */
+    border-top: 1px solid rgba(216, 173, 99, 0.45);
+    border-bottom: 1px solid rgba(216, 173, 99, 0.45);
+
+    box-sizing: border-box;
+}
+
+.familia {
+    width: 110px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.familia img {
+    width: 65px;
+    height: 65px;
+
+    object-fit: contain;
+    display: block;
+
+    transition: transform 0.3s ease;
+}
+
+.familia span {
+    color: #d8ad63;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    text-align: center;
+}
+
+.familia:hover {
+    transform: translateY(-5px);
+}
+
+.familia:hover img {
+    transform: scale(1.08);
+}
+
+.familia + .familia {
+    border-left: 1px solid rgba(216, 173, 99, 0.30);
+    padding-left: 170px;
+}
+
+
+/* =========================================
+   SEÇÃO DE FRAGRÂNCIAS
+========================================= */
+
+.fragrancias {
+    width: 100%;
+    background-color: #061522;
+
+    padding: 55px 38px 65px;
+
+    position: relative;
+}
+
+
+/* =========================================
+   CABEÇALHO DA SEÇÃO
+========================================= */
+
+.cabecalho-fragrancias {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin-bottom: 28px;
+}
+
+
+.titulo-secao {
+    text-align: left;
+
+    margin: 0;
+}
+
+
+.titulo-secao p {
+    color: #d8ad63;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 9px;
+    font-weight: 500;
+
+    letter-spacing: 4px;
+
+    margin: 0 0 8px;
+}
+
+
+.titulo-secao h2 {
+    color: #f2e6d2;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+    font-weight: 400;
+
+    font-style: italic;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   BOTÃO VER TODAS
+========================================= */
+
+.ver-todas {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: #d8ad63;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 9px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+
+.ver-todas span {
+    font-size: 18px;
+
+    line-height: 10px;
+}
+
+
+.ver-todas:hover {
+    color: #f2e6d2;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   ÁREA DOS CARDS
+========================================= */
+
+.produtos-fragrancias {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+
+    gap: 9px;
+}
+
+
+/* =========================================
+   CARD DO PERFUME
+========================================= */
+
+.card-perfume {
+    min-width: 0;
+
+    background-color: #071724;
+
+    border: 1px solid rgba(216, 173, 99, 0.40);
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.3s ease;
+}
+
+
+.card-perfume:hover {
+    border-color: #d8ad63;
+
+    transform: translateY(-5px);
+}
+
+
+/* =========================================
+   IMAGEM DO PERFUME
+========================================= */
+
+.imagem-perfume {
+    width: 100%;
+
+    height: 185px;
+
+    overflow: hidden;
+
+    background-color: #091a28;
+}
+
+
+.imagem-perfume img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+
+.card-perfume:hover .imagem-perfume img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   INFORMAÇÕES DO PERFUME
+========================================= */
+
+.info-perfume {
+    min-height: 150px;
+
+    padding: 14px 12px 12px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.info-perfume h3 {
+    color: #eee7dc;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    margin: 0;
+
+    white-space: nowrap;
+}
+
+
+.familia-perfume {
+    color: #c99e59;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 9px;
+
+    margin: 5px 0 12px;
+}
+
+
+.descricao-perfume {
+    color: #c9c6bf;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 9px;
+
+    line-height: 1.55;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   PREÇO + BOTÃO
+========================================= */
+
+.rodape-card {
+    margin-top: auto;
+
+    padding-top: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.rodape-card strong {
+    color: #eee7dc;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+/* =========================================
+   BOTÃO REDONDO DO CARD
+========================================= */
+
+.botao-perfume {
+    width: 24px;
+    height: 24px;
+
+    border: 1px solid rgba(216, 173, 99, 0.75);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #d8ad63;
+
+    font-size: 14px;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+
+.botao-perfume:hover {
+    background-color: #d8ad63;
+
+    color: #061522;
+}
+
+
+/* =========================================
+   LINHA COMPLETA
+========================================= */
+
+.linha-completa {
+    min-height: 500px;
+
+    background-color: #020d17;
+
+    display: grid;
+
+    grid-template-columns: 42% 33% 25%;
+
+    align-items: stretch;
+
+    border-top: 1px solid rgba(216, 173, 99, 0.28);
+}
+
+
+/* =========================================
+   IMAGEM — LINHA COMPLETA
+========================================= */
+
+.imagem-completa {
+    min-height: 500px;
+
+    position: relative;
+    overflow: hidden;
+
+    background: #020d17;
+}
+
+
+.imagem-completa img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    /* mistura a imagem com o fundo */
+    -webkit-mask-image: linear-gradient(
+        to right,
+        #000 0%,
+        #000 72%,
+        rgba(0, 0, 0, 0.85) 82%,
+        rgba(0, 0, 0, 0.45) 92%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to right,
+        #000 0%,
+        #000 72%,
+        rgba(0, 0, 0, 0.85) 82%,
+        rgba(0, 0, 0, 0.45) 92%,
+        transparent 100%
+    );
+}
+
+
+/* texto */
+
+.texto-completa {
+    padding: 70px 55px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.texto-completa > p:first-child {
+    color: #d8ad63;
+
+    font-size: 10px;
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+.texto-completa h2 {
+    color: #f2e6d2;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 40px;
+    font-weight: 400;
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+.texto-completa h2 span {
+    color: #d8ad63;
+    font-style: italic;
+}
+
+.descricao-completa {
+    color: #c5c1b9;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   PRODUTOS COMPLEMENTARES
+========================================= */
+
+.complementares {
+    border-left: 1px solid rgba(216, 173, 99, 0.25);
+
+    padding: 40px 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.complementar {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 22px;
+}
+
+.complementar:last-child {
+    margin-bottom: 0;
+}
+
+.complementar img {
+    width: 32px;
+    height: 32px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+.complementar span {
+    color: #ddd6ca;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   DESCUBRA SUA ESSÊNCIA
+========================================= */
+
+.essencia {
+    width: 100%;
+    min-height: 430px;
+
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 42% 34% 24%;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background-color: #020d17;
+
+    border-top: 1px solid rgba(216, 173, 99, 0.35);
+}
+
+
+/* =========================================
+   TEXTO — LADO ESQUERDO
+========================================= */
+
+.essencia-texto {
+    position: relative;
+
+    z-index: 3;
+
+    padding-left: 80px;
+    padding-right: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.essencia h2 {
+    color: #f2e6d2;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 43px;
+    font-weight: 400;
+
+    line-height: 1.12;
+
+    margin: 0 0 30px;
+}
+
+
+.essencia h2 span {
+    color: #d8ad63;
+
+    font-style: italic;
+}
+
+
+/* =========================================
+   BOTÃO DA ESSÊNCIA
+========================================= */
+
+.essencia .botao {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    border: 1px solid #d8ad63;
+
+    color: #d8ad63;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s ease;
+}
+
+
+.essencia .botao:hover {
+    background-color: #d8ad63;
+
+    color: #020d17;
+}
+
+
+/* =========================================
+   IMAGEM DA FLOR — CENTRO
+========================================= */
+
+.essencia-imagem {
+    height: 430px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.essencia-imagem::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 2;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            to right,
+            #020d17 0%,
+            rgba(2, 13, 23, 0.15) 18%,
+            transparent 50%,
+            rgba(2, 13, 23, 0.10) 78%,
+            #020d17 100%
+        );
+}
+
+
+.essencia-imagem img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    filter: brightness(0.72);
+
+    -webkit-mask-image:
+        linear-gradient(
+            to right,
+            transparent 0%,
+            #000 12%,
+            #000 82%,
+            transparent 100%
+        );
+
+    mask-image:
+        linear-gradient(
+            to right,
+            transparent 0%,
+            #000 12%,
+            #000 82%,
+            transparent 100%
+        );
+}
+
+
+/* =========================================
+   LOGO — LADO DIREITO
+========================================= */
+
+.essencia-logo {
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+}
+
+
+.essencia-logo img {
+    width: 300px;
+    max-width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+}

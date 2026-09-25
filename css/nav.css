@@ -1,0 +1,245 @@
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar {
+    width: 100%;
+    height: 78px;
+
+    background-color: #03111d;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 55px;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid rgba(212, 168, 87, 0.18);
+
+    position: relative;
+    z-index: 100;
+}
+
+
+/* ========================================
+   LOGO
+======================================== */
+
+.logo {
+    width: 185px;
+
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+}
+
+
+/* ========================================
+   MENU
+======================================== */
+
+.menu {
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 38px;
+}
+
+.menu a {
+    position: relative;
+
+    color: #eee7dc;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 400;
+
+    letter-spacing: 2px;
+
+    transition: color 0.3s ease;
+}
+
+
+/* Mouse em cima */
+
+.menu a:hover {
+    color: #d8ad63;
+}
+
+
+/* Linha dourada */
+
+.menu a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -11px;
+
+    width: 0;
+    height: 1px;
+
+    background-color: #d8ad63;
+
+    transition: width 0.3s ease;
+}
+
+
+/* Linha aparece no hover */
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+/* Página atual */
+
+.menu a.ativo {
+    color: #d8ad63;
+}
+
+.menu a.ativo::after {
+    width: 100%;
+}
+
+
+/* ========================================
+   ÁREA DOS ÍCONES
+======================================== */
+
+.acoes {
+    width: 100px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 23px;
+
+    flex-shrink: 0;
+}
+
+
+/* ========================================
+   ÍCONE DE BUSCA
+======================================== */
+
+.busca {
+    width: 18px;
+    height: 18px;
+
+    position: relative;
+
+    display: block;
+}
+
+.busca::before {
+    content: "";
+
+    position: absolute;
+
+    width: 11px;
+    height: 11px;
+
+    border: 1px solid #eee7dc;
+
+    border-radius: 50%;
+
+    top: 0;
+    left: 0;
+
+    transition: border-color 0.3s ease;
+}
+
+.busca::after {
+    content: "";
+
+    position: absolute;
+
+    width: 7px;
+    height: 1px;
+
+    background-color: #eee7dc;
+
+    transform: rotate(45deg);
+
+    top: 12px;
+    left: 11px;
+
+    transition: background-color 0.3s ease;
+}
+
+.busca:hover::before {
+    border-color: #d8ad63;
+}
+
+.busca:hover::after {
+    background-color: #d8ad63;
+}
+
+
+/* ========================================
+   ÍCONE DA SACOLA
+======================================== */
+
+.sacola {
+    width: 16px;
+    height: 18px;
+
+    position: relative;
+
+    display: block;
+
+    border: 1px solid #eee7dc;
+
+    transition: border-color 0.3s ease;
+}
+
+.sacola::before {
+    content: "";
+
+    position: absolute;
+
+    width: 7px;
+    height: 5px;
+
+    border: 1px solid #eee7dc;
+
+    border-bottom: none;
+
+    border-radius: 5px 5px 0 0;
+
+    left: 3px;
+    top: -6px;
+
+    transition: border-color 0.3s ease;
+}
+
+.sacola:hover {
+    border-color: #d8ad63;
+}
+
+.sacola:hover::before {
+    border-color: #d8ad63;
+}

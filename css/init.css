@@ -1,0 +1,32 @@
+:root {
+    --bg-fundo: #0B0F17;
+    --bg-card: #131A26;
+    --cor-dourado: #C5A059;
+    --cor-dourado-hover: #E3BC6A;
+    --texto-claro: #F8FAFC;
+    --texto-cinza: #94A3B8;
+    --borda: rgba(197, 160, 89, 0.25);
+    --fonte: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+}
+
+body {
+    background-color: var(--bg-fundo);
+    color: var(--texto-claro);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
