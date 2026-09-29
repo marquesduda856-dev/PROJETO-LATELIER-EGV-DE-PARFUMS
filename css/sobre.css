@@ -1,0 +1,401 @@
+:root {
+    --cor-dourado: #C5A059;
+    --cor-dourado-hover: #D4AF37;
+    --bg-escuro: #0B0F17;
+    --bg-card: #121824;
+    --bg-card-header: #161F2E;
+    --borda-card: #1E293B;
+    --texto-claro: #FFFFFF;
+    --texto-cinza: #94A3B8;
+}
+
+.sobre-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: var(--texto-claro);
+}
+
+.btn-dourado {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--cor-dourado);
+    color: #000000;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 6px;
+    border: 1px solid var(--cor-dourado);
+    transition: all 0.3s ease;
+}
+
+.btn-dourado:hover {
+    background-color: var(--cor-dourado-hover);
+    border-color: var(--cor-dourado-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+}
+
+.btn-outline-dourado {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: transparent;
+    color: var(--cor-dourado);
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 6px;
+    border: 1px solid var(--cor-dourado);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dourado:hover {
+    background-color: var(--cor-dourado);
+    color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+}
+
+.sobre-hero {
+    background: linear-gradient(135deg, #161F2E 0%, #0B0F17 100%);
+    border: 1px solid var(--borda-card);
+    border-top: 3px solid var(--cor-dourado);
+    border-radius: 12px;
+    padding: 60px 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.badge-tag {
+    display: inline-block;
+    background-color: rgba(197, 160, 89, 0.15);
+    color: var(--cor-dourado);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.hero-title {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+    font-weight: 800;
+    color: var(--texto-claro);
+}
+
+.hero-title .dourado {
+    color: var(--cor-dourado);
+}
+
+.hero-subtitle {
+    color: var(--texto-cinza);
+    font-size: 1.05rem;
+    max-width: 720px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.sobre-historia {
+    margin-bottom: 60px;
+}
+
+.historia-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.historia-texto h2 {
+    font-size: 1.8rem;
+    color: var(--cor-dourado);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.divisor-dourado {
+    width: 60px;
+    height: 3px;
+    background-color: var(--cor-dourado);
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.historia-texto p {
+    color: var(--texto-cinza);
+    font-size: 0.98rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.historia-texto p strong {
+    color: var(--texto-claro);
+}
+
+.historia-imagem-box {
+    display: flex;
+    justify-content: center;
+}
+
+.moldura-dourada {
+    width: 100%;
+    max-width: 320px;
+    height: 320px;
+    border: 2px solid var(--cor-dourado);
+    border-radius: 16px;
+    padding: 12px;
+    background-color: var(--bg-card);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.imagem-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-card-header);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.img-logo-historia {
+    width: 170px;
+    max-width: 85%;
+    height: auto;
+    max-height: 130px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.imagem-placeholder p {
+    color: var(--cor-dourado);
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.imagem-placeholder small {
+    color: var(--texto-cinza);
+    font-size: 0.8rem;
+    margin-top: 4px;
+}
+
+.sobre-pilares {
+    margin-bottom: 60px;
+}
+
+.seccao-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.seccao-header h2 {
+    font-size: 1.8rem;
+    color: var(--cor-dourado);
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.seccao-header p {
+    color: var(--texto-cinza);
+    font-size: 0.95rem;
+}
+
+.pilares-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.pilar-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--borda-card);
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    text-decoration: none;
+}
+
+.pilar-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--cor-dourado);
+}
+
+.pilar-card-link {
+    cursor: pointer;
+    border: 1px solid rgba(197, 160, 89, 0.4);
+    background: linear-gradient(180deg, var(--bg-card) 0%, rgba(197, 160, 89, 0.05) 100%);
+}
+
+.pilar-card-link:hover {
+    box-shadow: 0 8px 25px rgba(197, 160, 89, 0.2);
+    border-color: var(--cor-dourado-hover);
+}
+
+.pilar-card-link h3 {
+    color: var(--cor-dourado);
+}
+
+.pilar-card-link .icon-link {
+    font-size: 0.85rem;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.pilar-card-link:hover .icon-link {
+    transform: translate(2px, -2px);
+}
+
+.link-destaque {
+    display: block;
+    margin-top: 10px;
+    color: var(--cor-dourado);
+    font-weight: 700;
+}
+
+.pilar-icon {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.pilar-card h3 {
+    color: var(--texto-claro);
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.pilar-card p {
+    color: var(--texto-cinza);
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.sobre-numeros {
+    background-color: var(--bg-card);
+    border: 1px solid var(--borda-card);
+    border-radius: 12px;
+    padding: 40px 20px;
+    margin-bottom: 60px;
+}
+
+.numeros-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.numero-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.numero-val {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--cor-dourado);
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.numero-lbl {
+    color: var(--texto-cinza);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* CTA */
+.sobre-cta {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cta-box {
+    background: linear-gradient(135deg, #1A2333 0%, #121824 100%);
+    border: 1px solid var(--cor-dourado);
+    border-radius: 16px;
+    padding: 45px 30px;
+    box-shadow: 0 10px 30px rgba(197, 160, 89, 0.15);
+}
+
+.cta-box h2 {
+    color: var(--cor-dourado);
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.cta-box p {
+    color: var(--texto-cinza);
+    font-size: 1rem;
+    max-width: 580px;
+    margin: 0 auto 25px auto;
+}
+
+.cta-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .historia-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .historia-imagem-box {
+        margin-top: 20px;
+    }
+
+    .pilares-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .numeros-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .numeros-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-botoes {
+        flex-direction: column;
+    }
+
+    .cta-botoes .btn-dourado,
+    .cta-botoes .btn-outline-dourado {
+        width: 100%;
+    }
+}

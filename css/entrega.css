@@ -1,0 +1,135 @@
+.secao-calculadora-frete {
+    padding: 50px 20px 30px;
+}
+
+.caixa-calculadora {
+    max-width: 480px;
+    margin: 30px auto 0;
+    background-color: #131A26;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 28px;
+}
+
+.caixa-calculadora label {
+    display: block;
+    color: var(--texto-cinza);
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+.linha-input-frete {
+    display: flex;
+    gap: 10px;
+}
+
+.linha-input-frete input {
+    flex: 1;
+    background-color: #0d121c;
+    border: 1px solid var(--borda);
+    border-radius: 4px;
+    padding: 12px 14px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.linha-input-frete input:focus {
+    outline: none;
+    border-color: var(--cor-dourado);
+}
+
+.linha-input-frete button {
+    background-color: var(--cor-dourado);
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    padding: 0 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+
+.linha-input-frete button:hover {
+    background-color: var(--cor-dourado-hover);
+}
+
+.link-nao-sei-cep {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: var(--texto-cinza);
+    text-decoration: underline;
+}
+
+.link-nao-sei-cep:hover {
+    color: var(--cor-dourado);
+}
+
+.erro-cep {
+    margin-top: 14px;
+    color: #e57373;
+    font-size: 0.85rem;
+}
+
+/* RESULTADO DO CÁLCULO */
+.resultado-frete {
+    margin-top: 22px;
+    border-top: 1px solid var(--borda);
+    padding-top: 18px;
+}
+
+.linha-resultado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.linha-resultado span {
+    color: var(--texto-cinza);
+    font-size: 0.88rem;
+}
+
+.linha-resultado strong {
+    color: var(--cor-dourado);
+    font-size: 1rem;
+}
+
+.obs-resultado-frete {
+    margin-top: 12px;
+    font-size: 0.8rem;
+    color: var(--texto-cinza);
+    font-style: italic;
+}
+
+.grid-regioes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+@media (max-width: 992px) {
+    .grid-regioes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-regioes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .caixa-calculadora {
+        padding: 20px;
+    }
+    .linha-input-frete {
+        flex-direction: column;
+    }
+    .linha-input-frete button {
+        justify-content: center;
+        padding: 12px;
+    }
+}

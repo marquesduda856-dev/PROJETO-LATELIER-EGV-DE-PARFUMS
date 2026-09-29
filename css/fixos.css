@@ -1,0 +1,217 @@
+header.header-site {
+    background-color: #030712 !important;
+    border-bottom: 1px solid rgba(197, 160, 89, 0.25) !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    width: 100% !important;
+}
+
+header.header-site .container-header {
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding: 10px 30px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 30px !important;
+}
+
+/* Logótipo */
+header.header-site .logo-link {
+    display: flex !important;
+    align-items: center !important;
+    text-decoration: none !important;
+}
+
+header.header-site .img-logo {
+    height: 100px !important;
+    max-height: 100px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+}
+
+/* Menu Central */
+header.header-site .nav-principal,
+header.header-site nav {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+header.header-site .nav-principal ul, 
+header.header-site .menu-lista {
+    list-style: none !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 30px !important; /* Espaçamento entre itens aumentado */
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+header.header-site .nav-principal li {
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+header.header-site .nav-principal a {
+    font-size: 0.82rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    color: #E2E8F0 !important;
+    letter-spacing: 0.8px !important;
+    transition: color 0.2s ease !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 1 !important; /* Normaliza a altura da linha */
+    display: inline-flex !important;
+    align-items: center !important; /* Garante alinhamento vertical perfeito */
+}
+
+header.header-site .nav-principal a:hover,
+header.header-site .nav-principal a.link-destaque {
+    color: #C5A059 !important;
+}
+
+/* Força alinhamento idêntico no link em destaque */
+header.header-site .nav-principal a.link-destaque {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    line-height: 1 !important;
+}
+
+/* Ícones do lado direito */
+header.header-site .menu-usuario {
+    display: flex !important;
+    align-items: center !important;
+    gap: 22px !important;
+}
+
+header.header-site .item-menu {
+    color: #E2E8F0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: color 0.2s ease !important;
+    text-decoration: none !important;
+    width: 32px !important;
+    height: 32px !important;
+    background: transparent !important;
+}
+
+header.header-site .item-menu i {
+    font-size: 1.25rem !important;
+}
+
+header.header-site .item-menu:hover {
+    color: #C5A059 !important;
+}
+
+header.header-site .carrinho-icon {
+    position: relative !important;
+}
+
+header.header-site .qtd-carrinho {
+    background-color: #EF4444 !important;
+    color: #FFFFFF !important;
+    font-size: 0.65rem !important;
+    font-weight: bold !important;
+    border-radius: 50% !important;
+    width: 18px !important;
+    height: 18px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important;
+    top: -4px !important;
+    right: -6px !important;
+}
+
+/* Rodapé */
+.footer-site {
+    background-color: #05080E;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px 20px 20px 20px;
+    margin-top: 50px;
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.img-logo-footer {
+    height: 55px;
+    margin-bottom: 15px;
+}
+
+.coluna h3 {
+    color: #C5A059;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.coluna ul {
+    list-style: none;
+}
+
+.coluna ul li {
+    margin-bottom: 8px;
+}
+
+.coluna a, .coluna p {
+    color: #94A3B8;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.coluna a:hover {
+    color: #C5A059;
+}
+
+.copy-footer {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 30px;
+    padding-top: 15px;
+    font-size: 0.8rem;
+    color: #94A3B8;
+}
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #FFF;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+html {
+    scroll-behavior: smooth;
+}

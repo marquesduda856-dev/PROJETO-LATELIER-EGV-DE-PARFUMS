@@ -1,0 +1,156 @@
+.footer {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.beneficios-footer {
+    width: 100%;
+    min-height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #03111d;
+    border-top: 1px solid rgba(216, 173, 99, 0.35);
+    border-bottom: 1px solid rgba(216, 173, 99, 0.20);
+}
+
+.beneficio {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.beneficio img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.beneficio span {
+    color: #e5ddd0;
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+/* =========================================
+   PARTE INFERIOR DO FOOTER
+   ========================================= */
+
+.footer-inferior {
+    width: 100%;
+    min-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #020d17;
+    border-bottom: 1px solid rgba(216, 173, 99, 0.20);
+    box-sizing: border-box;
+}
+
+/* MARCA */
+
+.footer-marca {
+    max-width: 350px;
+}
+
+.footer-marca h2 {
+    margin: 0 0 12px 0;
+    color: #e5ddd0;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: normal;
+    letter-spacing: 4px;
+}
+
+.footer-marca h2 span {
+    color: #d8ad63;
+}
+
+.footer-marca p {
+    margin: 0;
+    color: #8f969c;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+
+/* REDES SOCIAIS */
+
+.footer-redes {
+    text-align: right;
+}
+
+.footer-redes h3 {
+    margin: 0 0 15px 0;
+    color: #d8ad63;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+/* ÍCONES */
+
+.redes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 14px;
+}
+
+.rede {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.rede img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.rede:hover {
+    border-color: #d8ad63;
+    transform: translateY(-3px);
+    background-color: rgba(216, 173, 99, 0.08);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+    .beneficios-footer {
+        flex-direction: column;
+        padding: 20px 10px;
+        gap: 15px;
+    }
+
+    .footer-inferior {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer-marca {
+        max-width: 100%;
+    }
+
+    .footer-redes {
+        text-align: center;
+    }
+
+    .redes {
+        justify-content: center;
+    }
+}
