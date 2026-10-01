@@ -1,0 +1,213 @@
+/* ===================================
+   PROGRAMA DE FIDELIDADE (LUXURY DARK)
+   =================================== */
+
+:root {
+    --cor-dourado: #C5A059;
+    --cor-dourado-hover: #e0b86c;
+    --bg-escuro: #0d121c;
+    --bg-card: #131A26;
+    --texto-cinza: #a0a0a0;
+    --borda: rgba(197, 160, 89, 0.2);
+}
+
+/* BANNER DE CABEÇALHO */
+.banner-pagina-interna {
+    background-color: var(--bg-escuro);
+    border-bottom: 1px solid var(--borda);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container-banner-interno {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.icone-banner-interno {
+    font-size: 2.5rem;
+    color: var(--cor-dourado);
+    margin-bottom: 15px;
+}
+
+.banner-pagina-interna h1 {
+    font-size: 2rem;
+    color: var(--cor-dourado);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.banner-pagina-interna p {
+    color: var(--texto-cinza);
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* CONTAINER GERAL */
+.container-fidelidade {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.titulo-secao {
+    color: var(--cor-dourado);
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 24px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.texto-fidelidade-intro {
+    color: var(--texto-cinza);
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 820px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.texto-fidelidade-intro strong {
+    color: var(--cor-dourado);
+}
+
+/* GRID COMO FUNCIONA (3 CARDS) */
+.grid-como-funciona {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.passo-fidelidade {
+    background-color: var(--bg-card);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 32px 20px;
+    text-align: center;
+    transition: border-color 0.25s, transform 0.25s;
+}
+
+.passo-fidelidade:hover {
+    border-color: var(--cor-dourado);
+    transform: translateY(-4px);
+}
+
+.passo-fidelidade i {
+    font-size: 2rem;
+    color: var(--cor-dourado);
+    margin-bottom: 16px;
+}
+
+.passo-fidelidade h4 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.passo-fidelidade p {
+    color: var(--texto-cinza);
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* SEÇÃO DOS NÍVEIS (6 CARDS EM GRID) */
+.secao-niveis-fidelidade {
+    background-color: var(--bg-escuro);
+    border-top: 1px solid var(--borda);
+    border-bottom: 1px solid var(--borda);
+}
+
+.grid-niveis {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+}
+
+.card-nivel {
+    background-color: var(--bg-card);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 24px 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: border-color 0.25s, transform 0.25s;
+}
+
+.card-nivel:hover {
+    border-color: var(--cor-dourado);
+    transform: translateY(-4px);
+}
+
+.card-nivel-inicial {
+    border-color: rgba(197, 160, 89, 0.15);
+}
+
+.numero-nivel {
+    font-size: 0.75rem;
+    color: var(--texto-cinza);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.percentual-nivel {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-dourado);
+    line-height: 1;
+}
+
+.faixa-nivel {
+    font-size: 0.8rem;
+    color: var(--texto-cinza);
+}
+
+.texto-fidelidade-obs {
+    text-align: center;
+    color: var(--texto-cinza);
+    font-size: 0.82rem;
+    margin-top: 28px;
+    font-style: italic;
+}
+
+/* CHAMADA PARA AÇÃO (CTA) */
+.secao-cta-fidelidade {
+    padding: 60px 20px;
+}
+
+.texto-centralizado {
+    text-align: center;
+}
+
+.secao-cta-fidelidade h2 {
+    color: var(--cor-dourado);
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.secao-cta-fidelidade p {
+    color: var(--texto-cinza);
+    margin-bottom: 24px;
+    font-size: 0.95rem;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 992px) {
+    .grid-niveis {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-como-funciona {
+        grid-template-columns: 1fr;
+    }
+    .grid-niveis {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
