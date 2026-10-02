@@ -28,8 +28,12 @@ a {
    HERO / PARTE PRINCIPAL
 ========================================= */
 
+/* =========================================
+   HERO / PARTE PRINCIPAL
+========================================= */
+
 .hero {
-    min-height: 460px; /* Aumentado para manter a proporção correta em ecrãs largos */
+    min-height: 700px; /* Aumentado para manter a proporção correta em ecrãs largos */
     width: 100%;
 
     position: relative;
@@ -49,6 +53,7 @@ a {
 
     width: 100%;
     height: 100%;
+    min-height: 200px;
 
     object-fit: cover;
     object-position: right top; /* Alinha o recorte pelo topo e pela direita */
@@ -56,6 +61,28 @@ a {
     display: block;
 
     z-index: 0;
+}
+
+/* =========================================
+   ESCURECIMENTO DA IMAGEM
+========================================= */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to right,
+        rgba(2, 13, 23, 0.98) 0%,
+        rgba(2, 13, 23, 0.88) 18%,
+        rgba(2, 13, 23, 0.60) 35%,
+        rgba(2, 13, 23, 0.20) 58%,
+        rgba(2, 13, 23, 0.02) 100%
+    );
+
+    z-index: 1;
+
+    pointer-events: none;
 }
 
 
@@ -67,45 +94,80 @@ a {
     width: 500px;
 
     position: relative;
+
     z-index: 2;
 }
+
 
 .categoria {
     color: #d8ad63;
 
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 5px;
 
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
+
 
 .hero h1 {
     color: #f2e6d2;
 
     font-family: Georgia, "Times New Roman", serif;
 
-    font-size: 46px;
+    font-size: 90px;
     font-weight: 400;
 
-    line-height: 1.08;
+    line-height: 1.00;
 
     margin-bottom: 22px;
 }
 
+
 .hero h1 span {
     color: #d8ad63;
+
     font-style: italic;
 }
 
+
 .descricao {
-    width: 420px;
+    width: 410px;
 
     color: #c7c2ba;
 
-    font-size: 13px;
-    line-height: 1.55;
+    font-size: 20px;
 
-    margin-bottom: 28px;
+    line-height: 1.6;
+
+    margin-bottom: 27px;
+}
+
+
+/* =========================================
+   BOTÃO DO HERO
+========================================= */
+
+.hero .botao {
+    display: inline-block;
+
+    padding: 13px 23px;
+
+    border: 1px solid #d8ad63;
+
+    color: #d8ad63;
+
+    font-size: 18px;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s ease;
+}
+
+
+.hero .botao:hover {
+    background-color: #d8ad63;
+
+    color: #020d17;
 }
 
 
@@ -113,23 +175,26 @@ a {
    BOTÕES
 ========================================= */
 
-.botao {
+.hero .botao {
     display: inline-block;
 
-    padding: 15px 28px;
+    padding: 14px 25px;
 
     border: 1px solid #d8ad63;
 
     color: #d8ad63;
 
-    font-size: 11px;
+    font-size: 15px;
+
     letter-spacing: 2px;
 
     transition: 0.3s ease;
 }
 
-.botao:hover {
+
+.hero .botao:hover {
     background-color: #d8ad63;
+
     color: #020d17;
 }
 
@@ -142,17 +207,22 @@ a {
    FAMÍLIAS OLFATIVAS
 ========================================== */
 
+/* =========================================
+   FAMÍLIAS OLFATIVAS
+========================================= */
+
 .familias {
     width: 100%;
-    height: 220px;
+    height: 120px;
 
     display: grid !important;
+
     grid-template-columns: repeat(5, 1fr) !important;
 
     align-items: center;
     justify-items: center;
 
-    padding: 30px 40px;
+    padding: 15px 40px;
 
     background: #03111d;
 
@@ -160,38 +230,46 @@ a {
     border-bottom: 1px solid rgba(216, 173, 99, 0.45);
 }
 
+
 .familia {
     width: 100%;
-    height: 150px;
+    height: 80px;
 
     display: flex;
+
     flex-direction: column;
 
     align-items: center;
     justify-content: center;
 
-    gap: 12px;
+    gap: 7px;
 
     cursor: pointer;
 
     box-sizing: border-box;
+
+    transition: transform 0.3s ease;
 }
 
+
 .familia img {
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
 
     object-fit: contain;
+
     display: block;
 
     transition: transform 0.3s ease;
 }
 
+
 .familia span {
     color: #d8ad63;
 
     font-family: Arial, sans-serif;
-    font-size: 10px;
+
+    font-size: 11px;
     font-weight: 500;
 
     letter-spacing: 2px;
@@ -199,51 +277,20 @@ a {
     text-align: center;
 }
 
+
 .familia:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 }
+
 
 .familia:hover img {
     transform: scale(1.08);
 }
 
-.familia + .familia {
-    border-left: 1px solid rgba(216, 173, 99, 0.30);
-    padding-left: 20px;
-}
-
-.familia img {
-    width: 65px;
-    height: 65px;
-
-    object-fit: contain;
-    display: block;
-
-    transition: transform 0.3s ease;
-}
-
-.familia span {
-    color: #d8ad63;
-
-    font-family: Arial, sans-serif;
-    font-size: 10px;
-    font-weight: 500;
-
-    letter-spacing: 2px;
-
-    text-align: center;
-}
-
-.familia:hover {
-    transform: translateY(-5px);
-}
-
-.familia:hover img {
-    transform: scale(1.08);
-}
 
 .familia + .familia {
     border-left: 1px solid rgba(216, 173, 99, 0.30);
+
     padding-left: 20px;
 }
 
@@ -252,11 +299,16 @@ a {
    SEÇÃO DE FRAGRÂNCIAS
 ========================================= */
 
+/* =========================================
+   SEÇÃO DE FRAGRÂNCIAS
+========================================= */
+
 .fragrancias {
     width: 100%;
+
     background-color: #061522;
 
-    padding: 55px 38px 65px;
+    padding: 75px 55px 85px;
 
     position: relative;
 }
@@ -270,10 +322,12 @@ a {
     width: 100%;
 
     display: flex;
+
     align-items: flex-end;
+
     justify-content: space-between;
 
-    margin-bottom: 28px;
+    margin-bottom: 38px;
 }
 
 
@@ -289,12 +343,13 @@ a {
 
     font-family: Arial, sans-serif;
 
-    font-size: 9px;
+    font-size: 14px;
+
     font-weight: 500;
 
     letter-spacing: 4px;
 
-    margin: 0 0 8px;
+    margin: 0 0 10px;
 }
 
 
@@ -303,10 +358,13 @@ a {
 
     font-family: Georgia, "Times New Roman", serif;
 
-    font-size: 25px;
+    font-size: 34px;
+
     font-weight: 400;
 
     font-style: italic;
+
+    line-height: 1.2;
 
     margin: 0;
 }
@@ -321,13 +379,14 @@ a {
 
     align-items: center;
 
-    gap: 9px;
+    gap: 10px;
 
     color: #d8ad63;
 
     font-family: Arial, sans-serif;
 
-    font-size: 9px;
+    font-size: 12px;
+
     font-weight: 500;
 
     letter-spacing: 2px;
@@ -339,7 +398,7 @@ a {
 
 
 .ver-todas span {
-    font-size: 18px;
+    font-size: 21px;
 
     line-height: 10px;
 }
@@ -348,7 +407,7 @@ a {
 .ver-todas:hover {
     color: #f2e6d2;
 
-    transform: translateX(4px);
+    transform: translateX(5px);
 }
 
 
@@ -363,7 +422,7 @@ a {
 
     grid-template-columns: repeat(6, minmax(0, 1fr));
 
-    gap: 9px;
+    gap: 14px;
 }
 
 
@@ -376,21 +435,26 @@ a {
 
     background-color: #071724;
 
-    border: 1px solid rgba(216, 173, 99, 0.40);
+    border: 1px solid rgba(216, 173, 99, 0.38);
 
     overflow: hidden;
 
     display: flex;
+
     flex-direction: column;
 
-    transition: 0.3s ease;
+    transition: 0.35s ease;
+
+    position: relative;
 }
 
 
 .card-perfume:hover {
     border-color: #d8ad63;
 
-    transform: translateY(-5px);
+    transform: translateY(-7px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -401,7 +465,7 @@ a {
 .imagem-perfume {
     width: 100%;
 
-    height: 185px;
+    height: 210px;
 
     overflow: hidden;
 
@@ -411,6 +475,7 @@ a {
 
 .imagem-perfume img {
     width: 100%;
+
     height: 100%;
 
     display: block;
@@ -431,9 +496,9 @@ a {
 ========================================= */
 
 .info-perfume {
-    min-height: 150px;
+    min-height: 185px;
 
-    padding: 14px 12px 12px;
+    padding: 18px 16px 15px;
 
     display: flex;
 
@@ -441,12 +506,15 @@ a {
 }
 
 
+/* NOME */
+
 .info-perfume h3 {
     color: #eee7dc;
 
     font-family: Georgia, "Times New Roman", serif;
 
-    font-size: 15px;
+    font-size: 22px;
+
     font-weight: 400;
 
     line-height: 1.2;
@@ -457,23 +525,31 @@ a {
 }
 
 
+/* FAMÍLIA OLFATIVA */
+
 .familia-perfume {
-    color: #c99e59;
+    color: #d8ad63;
 
     font-family: Arial, sans-serif;
 
-    font-size: 9px;
+    font-size: 12px;
 
-    margin: 5px 0 12px;
+    font-weight: 500;
+
+    letter-spacing: 0.5px;
+
+    margin: 7px 0 13px;
 }
 
+
+/* DESCRIÇÃO */
 
 .descricao-perfume {
     color: #c9c6bf;
 
     font-family: Arial, sans-serif;
 
-    font-size: 9px;
+    font-size: 13px;
 
     line-height: 1.55;
 
@@ -488,7 +564,7 @@ a {
 .rodape-card {
     margin-top: auto;
 
-    padding-top: 15px;
+    padding-top: 18px;
 
     display: flex;
 
@@ -503,7 +579,8 @@ a {
 
     font-family: Georgia, "Times New Roman", serif;
 
-    font-size: 12px;
+    font-size: 17px;
+
     font-weight: 400;
 }
 
@@ -513,8 +590,9 @@ a {
 ========================================= */
 
 .botao-perfume {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+
+    height: 30px;
 
     border: 1px solid rgba(216, 173, 99, 0.75);
 
@@ -523,11 +601,12 @@ a {
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     color: #d8ad63;
 
-    font-size: 14px;
+    font-size: 17px;
 
     text-decoration: none;
 
@@ -546,95 +625,68 @@ a {
    LINHA COMPLETA
 ========================================= */
 
-.linha-completa {
-    min-height: 500px;
-
-    background-color: #020d17;
-
-    display: grid;
-
-    grid-template-columns: 42% 33% 25%;
-
-    align-items: stretch;
-
-    border-top: 1px solid rgba(216, 173, 99, 0.28);
-}
-
-
 /* =========================================
-   IMAGEM — LINHA COMPLETA
+   LINHA COMPLETA
 ========================================= */
 
-.imagem-completa {
-    min-height: 500px;
-
-    position: relative;
-    overflow: hidden;
-
-    background: #020d17;
-}
-
-
-.imagem-completa img {
+.linha-completa {
     width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit: cover;
-
-    /* mistura a imagem com o fundo */
-    -webkit-mask-image: linear-gradient(
-        to right,
-        #000 0%,
-        #000 72%,
-        rgba(0, 0, 0, 0.85) 82%,
-        rgba(0, 0, 0, 0.45) 92%,
-        transparent 100%
-    );
-
-    mask-image: linear-gradient(
-        to right,
-        #000 0%,
-        #000 72%,
-        rgba(0, 0, 0, 0.85) 82%,
-        rgba(0, 0, 0, 0.45) 92%,
-        transparent 100%
-    );
-}
-
-
-/* texto */
-
-.texto-completa {
-    padding: 70px 55px;
-
+    min-height: 500px;
+    position: relative;
+    background-color: #020d17;
+    background-image: 
+        linear-gradient(
+            to right, 
+            rgba(2, 13, 23, 0) 0%, 
+            rgba(2, 13, 23, 0.4) 25%, 
+            rgba(2, 13, 23, 0.92) 50%, 
+            #020d17 75%
+        ), 
+        url('./img/pagina_linha_M/terceira.jpg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
-
-    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(216, 173, 99, 0.25);
+    border-bottom: 1px solid rgba(216, 173, 99, 0.25);
 }
 
-.texto-completa > p:first-child {
+.linha-completa-conteudo {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 80px;
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 60px;
+    align-items: center;
+}
+
+/* TEXTO DA ESQUERDA / CENTRO */
+.texto-completa {
+    max-width: 480px;
+    margin-left: auto; /* Posiciona o texto após a imagem do frasco */
+    padding-right: 20px;
+}
+
+.subtitulo-completa {
     color: #d8ad63;
-
-    font-size: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
     letter-spacing: 4px;
-
-    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
 }
 
 .texto-completa h2 {
     color: #f2e6d2;
-
     font-family: Georgia, "Times New Roman", serif;
-
     font-size: 40px;
     font-weight: 400;
-
-    line-height: 1.1;
-
-    margin-bottom: 25px;
+    line-height: 1.2;
+    margin-bottom: 22px;
 }
 
 .texto-completa h2 span {
@@ -644,58 +696,68 @@ a {
 
 .descricao-completa {
     color: #c5c1b9;
-
+    font-family: Arial, sans-serif;
     font-size: 14px;
-    line-height: 1.7;
-
-    margin-bottom: 30px;
+    line-height: 1.65;
+    margin: 0;
 }
 
-
-/* =========================================
-   PRODUTOS COMPLEMENTARES
-========================================= */
-
+/* COLUNA DA DIREITA (NOTAS) */
 .complementares {
-    border-left: 1px solid rgba(216, 173, 99, 0.25);
-
-    padding: 40px 30px;
-
+    border-left: 1px solid rgba(216, 173, 99, 0.35);
+    padding-left: 40px;
     display: flex;
     flex-direction: column;
-
+    gap: 28px;
     justify-content: center;
 }
 
 .complementar {
     display: flex;
-
     align-items: center;
-
-    gap: 15px;
-
-    margin-bottom: 22px;
+    gap: 16px;
 }
 
-.complementar:last-child {
-    margin-bottom: 0;
+.icone-circulo {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 50%;
+    border: 1px solid rgba(216, 173, 99, 0.45);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #03111d;
 }
 
-.complementar img {
-    width: 55px;
-    height: 55px;
-
-    object-fit: contain;
-
-    flex-shrink: 0;
+.icone-circulo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-.complementar span {
-    color: #ddd6ca;
+.complementar-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+}
 
-    font-size: 17px;
+.complementar-titulo {
+    color: #d8ad63;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
-    line-height: 1.4;
+.complementar-desc {
+    color: #eee7dc;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
 }
 
 
