@@ -374,7 +374,11 @@ renderHeader("Meu Carrinho");
                     </button>
 
                     <p class="texto-fidelidade-obs">
+<<<<<<< HEAD
                         <i class="fa-solid fa-shield-halved"></i>*Compra 100% segura. Seus dados são protegidos em todas as etapas.
+=======
+                        *Compra 100% segura. Seus dados são protegidos em todas as etapas.
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
                     </p>
                 </div>
             </div>

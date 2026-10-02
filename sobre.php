@@ -25,8 +25,14 @@ renderHeader('Sobre Nós');
             <div class="historia-imagem-box">
                 <div class="moldura-dourada">
                     <div class="imagem-placeholder">
+<<<<<<< HEAD
                         <img src="img/Logo/logoEscrita.png.png" alt="L'Atelier EGV" class="img-logo-historia" onerror="this.src='https://placehold.co/100x100/0B0F17/C5A059?text=EGV';">
                         <small>França & Arábia em cada gota</small>
+=======
+                        <img src="img/Logo/logo.jpeg" alt="L'Atelier EGV" class="img-logo-historia" onerror="this.src='https://placehold.co/100x100/0B0F17/C5A059?text=EGV';">
+                        <p>L'Atelier EGV</p>
+                        <small>França & Arábia em Cada Gota</small>
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
                     </div>
                 </div>
             </div>

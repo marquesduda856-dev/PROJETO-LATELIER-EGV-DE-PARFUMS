@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .titulo-secao {
     color: var(--cor-dourado);
     text-align: center;
@@ -15,6 +16,8 @@
     --borda: rgba(197, 160, 89, 0.2);
 }
 
+=======
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
 .secao-calculadora-frete {
     padding: 50px 20px 30px;
 }
@@ -149,6 +152,7 @@
         justify-content: center;
         padding: 12px;
     }
+<<<<<<< HEAD
 }
 
 /* ===================================
@@ -255,4 +259,6 @@
     .grid-protecao {
         grid-template-columns: 1fr;
     }
+=======
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
 }

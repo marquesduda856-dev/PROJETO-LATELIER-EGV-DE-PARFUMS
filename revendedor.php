@@ -7,7 +7,11 @@ renderHeader('Seja um Revendedor');
     <div class="revendedor-grid">
 
         <div class="revendedor-info">
+<<<<<<< HEAD
             <img src="img/Logo/logoEscrita.png.png" alt="L'Atelier EGV" class="revendedor-logo">
+=======
+            <img src="img/Logo/logoEscrita.jpeg" alt="L'Atelier EGV" class="revendedor-logo">
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
             <h2 class="info-title">Faça parte da nossa rede de parceiros</h2>
             <p class="info-desc">Revenda produtos de alta perfumaria com margens lucrativas, suporte exclusivo e garantia de procedência.</p>
         </div>

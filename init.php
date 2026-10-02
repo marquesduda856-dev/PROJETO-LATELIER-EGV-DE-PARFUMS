@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
@@ -82,12 +83,25 @@ function renderHeader($titulo_pagina = "Início", $css_pagina = "") {
             $css_pagina = $pagina_atual;
         }
     }
+=======
+session_start();
+date_default_timezone_set('America/Sao_Paulo');
+
+$nome_empresa = "L'ATELIER EGV DE PARFUMS";
+$whatsapp_numero = "5511999999999"; 
+$whatsapp_mensagem = urlencode("Olá! Vim pelo site e gostaria de informações sobre a revenda e produtos.");
+
+function renderHeader($titulo_pagina = "Início") {
+    global $nome_empresa;
+    $v = time(); // Quebra de cache do navegador
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
     ?>
     <!DOCTYPE html>
     <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
         <title><?php echo htmlspecialchars($titulo_pagina) . " | " . htmlspecialchars($nome_empresa); ?></title>
 
         <!-- CSS Base/Globais -->
@@ -100,6 +114,23 @@ function renderHeader($titulo_pagina = "Início", $css_pagina = "") {
         <?php endif; ?>
 
         <!-- CSS Fixos do Topo e Menu -->
+=======
+        <title><?php echo $titulo_pagina . " | " . $nome_empresa; ?></title>
+
+        <!-- CSS Específicos das Páginas -->
+        <link rel="stylesheet" href="css/init.css?v=<?php echo $v; ?>">
+        <link rel="stylesheet" href="css/index.css?v=<?php echo $v; ?>">
+        <link rel="stylesheet" href="css/fidelidade.css?v=<?php echo $v; ?>">
+        <link rel="stylesheet" href="css/entrega.css?v=<?php echo $v; ?>">
+        <link rel="stylesheet" href="css/carrinho.css?v=<?php echo $v; ?>">
+        <link rel="stylesheet" href="css/minhaConta.css?v=<?php echo $v; ?>">
+        <link rel="stylesheet" href="css/revendedor.css?v=<?php echo $v; ?>">
+        <link rel="stylesheet" href="css/suporte.css?v=<?php echo $v; ?>">
+        <link rel="stylesheet" href="css/sobre.css?v=<?php echo $v; ?>">
+        <link rel="stylesheet" href="css/footer.css?v=<?php echo $v; ?>">
+
+        <!-- fixos.css no final para ter prioridade no cabeçalho -->
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
         <link rel="stylesheet" href="css/fixos.css?v=<?php echo $v; ?>">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -109,10 +140,17 @@ function renderHeader($titulo_pagina = "Início", $css_pagina = "") {
     <header class="header-site">
         <div class="container-header">
             <a href="index.php" class="logo-link" title="Ir para a página inicial">
+<<<<<<< HEAD
                 <img src="img/Logo/logoEscrita.png.png" alt="<?php echo htmlspecialchars($nome_empresa); ?>" class="img-logo" onerror="this.src='https://placehold.co/220x80/0B0F17/C5A059?text=L%27ATELIER+EGV';">
             </a>
 
             <?php
+=======
+                <img src="img/Logo/logoEscrita.png.png" alt="<?php echo $nome_empresa; ?>" class="img-logo" onerror="this.src='https://placehold.co/220x80/0B0F17/C5A059?text=L%27ATELIER+EGV';">
+            </a>
+
+            <?php 
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
             if (file_exists('nav.php')) {
                 include 'nav.php';
             }
@@ -123,7 +161,11 @@ function renderHeader($titulo_pagina = "Início", $css_pagina = "") {
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
 
+<<<<<<< HEAD
                 <a href="ajuda.php" class="item-menu" title="Atendimento / Ajuda">
+=======
+                <a href="suporte.php" class="item-menu" title="Atendimento / Ajuda">
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
                     <i class="fa-solid fa-headset"></i>
                 </a>
 
@@ -161,6 +203,10 @@ function renderFooter() {
     </main>
 
     <footer class="footer">
+<<<<<<< HEAD
+=======
+        <!-- Benefícios -->
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
         <section class="beneficios-footer">
             <div class="beneficio">
                 <img src="./img/pagina_linha_F/icone_12.png" alt="Produto original">
@@ -178,6 +224,10 @@ function renderFooter() {
             </div>
         </section>
 
+<<<<<<< HEAD
+=======
+        <!-- Parte Inferior do Footer -->
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
         <section class="footer-inferior">
             <div class="footer-marca">
                 <h2>L'ATELIER <span>EGV</span></h2>
@@ -204,4 +254,9 @@ function renderFooter() {
     </body>
     </html>
     <?php
+<<<<<<< HEAD
 }
+=======
+}
+?>
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8

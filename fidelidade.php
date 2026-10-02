@@ -22,9 +22,12 @@ for ($i = 0; $i < $niveis_exibidos; $i++) {
 renderHeader("Programa de Fidelidade", "css/fidelidade.css");
 ?>
 
+<<<<<<< HEAD
 <!-- Link direto para garantir que o CSS seja carregado -->
 <link rel="stylesheet" href="css/fidelidade.css">
 
+=======
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
 <!-- BANNER DA PÁGINA -->
 <section class="banner-pagina-interna">
     <div class="container-banner-interno">
@@ -52,7 +55,11 @@ renderHeader("Programa de Fidelidade", "css/fidelidade.css");
                 <p>Cada compra soma valor à sua conta de fidelidade.</p>
             </div>
             <div class="passo-fidelidade">
+<<<<<<< HEAD
                 <i class="fa-solid fa-chart-line"></i>
+=======
+                <i class="fa-solid fa-arrow-up-right-dots"></i>
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
                 <h4>2. Suba de nível</h4>
                 <p>A cada R$ <?php echo number_format($valor_por_nivel, 2, ',', '.'); ?> acumulados, seu desconto aumenta 5%.</p>
             </div>
@@ -98,8 +105,13 @@ renderHeader("Programa de Fidelidade", "css/fidelidade.css");
     <div class="container-fidelidade texto-centralizado">
         <h2>Comece a acumular hoje</h2>
         <p>Toda compra na L'Atelier EGV já conta para o seu próximo nível de desconto.</p>
+<<<<<<< HEAD
         <a href="index.php" class="btn-destaque-ouro" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; padding: 12px 28px; border-radius: 4px; font-weight: bold;">
             <i class="fa-solid fa-bag-shopping"></i> Página Inicial
+=======
+        <a href="index.php" class="btn-destaque-ouro">
+            <i class="fa-solid fa-bag-shopping"></i> Pagina Inicial
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
         </a>
     </div>
 </section>

@@ -164,7 +164,10 @@
     line-height: 1.4;
 }
 
+<<<<<<< HEAD
 /* CAIXA DE RESUMO DO PEDIDO */
+=======
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
 .caixa-resumo {
     background-color: #131A26;
     border: 1px solid var(--borda);
@@ -193,6 +196,7 @@
     margin-bottom: 8px;
 }
 
+<<<<<<< HEAD
 /* LINHA DE INPUT + BOTÃO (CUPOM E FRETE) */
 .linha-input-frete {
     display: flex;
@@ -239,6 +243,8 @@
     color: #000;
 }
 
+=======
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
 .msg-cupom {
     font-size: 0.8rem;
     margin-top: 8px;
@@ -286,7 +292,10 @@
     color: var(--cor-dourado);
 }
 
+<<<<<<< HEAD
 /* FORMAS DE PAGAMENTO */
+=======
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
 .caixa-pagamento {
     margin-top: 20px;
     padding-top: 20px;
@@ -343,16 +352,23 @@
     padding: 10px 12px;
     color: #fff;
     font-size: 0.9rem;
+<<<<<<< HEAD
     outline: none;
 }
 
 .conteudo-pagamento input::placeholder {
     color: var(--texto-cinza);
     opacity: 0.7;
+=======
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
 }
 
 .conteudo-pagamento input:focus,
 .conteudo-pagamento select:focus {
+<<<<<<< HEAD
+=======
+    outline: none;
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
     border-color: var(--cor-dourado);
 }
 
@@ -421,7 +437,10 @@
     background-color: var(--cor-dourado-hover);
 }
 
+<<<<<<< HEAD
 /* RESPONSIVIDADE */
+=======
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
 @media (max-width: 992px) {
     .grid-carrinho {
         grid-template-columns: 1fr;
@@ -451,6 +470,7 @@
     .linha-dupla {
         grid-template-columns: 1fr;
     }
+<<<<<<< HEAD
 }
 
 .texto-fidelidade-obs {
@@ -470,4 +490,6 @@
 .texto-fidelidade-obs i {
     color: var(--cor-dourado);       /* Ícone em destaque no tom da marca */
     font-size: 0.85rem;
+=======
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
 }

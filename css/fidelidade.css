@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ===================================
    PROGRAMA DE FIDELIDADE (LUXURY DARK)
    =================================== */
@@ -16,6 +17,12 @@
     background-color: var(--bg-escuro);
     border-bottom: 1px solid var(--borda);
     padding: 50px 20px;
+=======
+.banner-pagina-interna {
+    background-color: #0d121c;
+    border-bottom: 1px solid var(--borda);
+    padding: 60px 20px;
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
     text-align: center;
 }
 
@@ -25,7 +32,11 @@
 }
 
 .icone-banner-interno {
+<<<<<<< HEAD
     font-size: 2.5rem;
+=======
+    font-size: 2.2rem;
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
     color: var(--cor-dourado);
     margin-bottom: 15px;
 }
@@ -33,23 +44,34 @@
 .banner-pagina-interna h1 {
     font-size: 2rem;
     color: var(--cor-dourado);
+<<<<<<< HEAD
     margin-bottom: 10px;
     letter-spacing: 1px;
+=======
+    margin-bottom: 12px;
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
 }
 
 .banner-pagina-interna p {
     color: var(--texto-cinza);
     font-size: 1rem;
+<<<<<<< HEAD
     margin: 0;
 }
 
 /* CONTAINER GERAL */
+=======
+    line-height: 1.6;
+}
+
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
 .container-fidelidade {
     max-width: 1100px;
     margin: 0 auto;
     padding: 50px 20px;
 }
 
+<<<<<<< HEAD
 .titulo-secao {
     color: var(--cor-dourado);
     text-align: center;
@@ -59,11 +81,17 @@
     text-transform: uppercase;
 }
 
+=======
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
 .texto-fidelidade-intro {
     color: var(--texto-cinza);
     font-size: 1rem;
     line-height: 1.7;
+<<<<<<< HEAD
     max-width: 820px;
+=======
+    max-width: 800px;
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
     margin: 0 auto 40px;
     text-align: center;
 }
@@ -72,7 +100,10 @@
     color: var(--cor-dourado);
 }
 
+<<<<<<< HEAD
 /* GRID COMO FUNCIONA (3 CARDS) */
+=======
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
 .grid-como-funciona {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -80,16 +111,26 @@
 }
 
 .passo-fidelidade {
+<<<<<<< HEAD
     background-color: var(--bg-card);
     border: 1px solid var(--borda);
     border-radius: 8px;
     padding: 32px 20px;
     text-align: center;
     transition: border-color 0.25s, transform 0.25s;
+=======
+    background-color: #131A26;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: border-color 0.2s, transform 0.2s;
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
 }
 
 .passo-fidelidade:hover {
     border-color: var(--cor-dourado);
+<<<<<<< HEAD
     transform: translateY(-4px);
 }
 
@@ -102,6 +143,20 @@
 .passo-fidelidade h4 {
     color: #ffffff;
     font-size: 1.1rem;
+=======
+    transform: translateY(-3px);
+}
+
+.passo-fidelidade i {
+    font-size: 1.8rem;
+    color: var(--cor-dourado);
+    margin-bottom: 14px;
+}
+
+.passo-fidelidade h4 {
+    color: #fff;
+    font-size: 1rem;
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
     margin-bottom: 8px;
 }
 
@@ -109,12 +164,19 @@
     color: var(--texto-cinza);
     font-size: 0.88rem;
     line-height: 1.5;
+<<<<<<< HEAD
     margin: 0;
 }
 
 /* SEÇÃO DOS NÍVEIS (6 CARDS EM GRID) */
 .secao-niveis-fidelidade {
     background-color: var(--bg-escuro);
+=======
+}
+
+.secao-niveis-fidelidade {
+    background-color: #0d121c;
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
     border-top: 1px solid var(--borda);
     border-bottom: 1px solid var(--borda);
 }
@@ -126,6 +188,7 @@
 }
 
 .card-nivel {
+<<<<<<< HEAD
     background-color: var(--bg-card);
     border: 1px solid var(--borda);
     border-radius: 8px;
@@ -137,21 +200,41 @@
     justify-content: center;
     gap: 8px;
     transition: border-color 0.25s, transform 0.25s;
+=======
+    background-color: #131A26;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 20px 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: border-color 0.2s, transform 0.2s;
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
 }
 
 .card-nivel:hover {
     border-color: var(--cor-dourado);
+<<<<<<< HEAD
     transform: translateY(-4px);
 }
 
 .card-nivel-inicial {
     border-color: rgba(197, 160, 89, 0.15);
+=======
+    transform: translateY(-3px);
+}
+
+.card-nivel-inicial {
+    opacity: 0.75;
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
 }
 
 .numero-nivel {
     font-size: 0.75rem;
     color: var(--texto-cinza);
     text-transform: uppercase;
+<<<<<<< HEAD
     letter-spacing: 1px;
 }
 
@@ -164,6 +247,19 @@
 
 .faixa-nivel {
     font-size: 0.8rem;
+=======
+    letter-spacing: 0.5px;
+}
+
+.percentual-nivel {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--cor-dourado);
+}
+
+.faixa-nivel {
+    font-size: 0.78rem;
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
     color: var(--texto-cinza);
 }
 
@@ -171,11 +267,18 @@
     text-align: center;
     color: var(--texto-cinza);
     font-size: 0.82rem;
+<<<<<<< HEAD
     margin-top: 28px;
     font-style: italic;
 }
 
 /* CHAMADA PARA AÇÃO (CTA) */
+=======
+    margin-top: 24px;
+    font-style: italic;
+}
+
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
 .secao-cta-fidelidade {
     padding: 60px 20px;
 }
@@ -187,16 +290,25 @@
 .secao-cta-fidelidade h2 {
     color: var(--cor-dourado);
     font-size: 1.6rem;
+<<<<<<< HEAD
     margin-bottom: 10px;
+=======
+    margin-bottom: 12px;
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
 }
 
 .secao-cta-fidelidade p {
     color: var(--texto-cinza);
     margin-bottom: 24px;
+<<<<<<< HEAD
     font-size: 0.95rem;
 }
 
 /* RESPONSIVIDADE */
+=======
+}
+
+>>>>>>> 30019621cbd5f5379d5468c645187a616bdf87d8
 @media (max-width: 992px) {
     .grid-niveis {
         grid-template-columns: repeat(3, 1fr);
